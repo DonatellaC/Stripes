@@ -1,0 +1,173 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+//Font Variables
+$font-stack: "Lato", sans-serif;
+
+//Colors Variables - Background
+$background: #fff;
+
+//Colors Variables - Blocks
+$background-color1: #244f75;
+$background-color2: #60bfbf;
+$background-color3: #8c4b7e;
+$background-color4: #f8bb44;
+$background-color5: #f24b4b;
+
+// Style
+body {
+  line-height: 1.5;
+  font-family: $font-stack;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+  align-self: center;
+  font-size: 3rem;
+}
+
+//  ----------------- Stripes -----------------
+
+.stripes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+}
+
+.stripes .stripe {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 20%;
+  margin-right: 3px;
+}
+
+// Background color for each block
+.block1 {
+  // background-color: #244f75;
+  background-color: $background-color1;
+}
+
+.block2 {
+  // background-color: #60bfbf;
+  background-color: $background-color2;
+}
+
+.block3 {
+  // background-color: #8c4b7e;
+  background-color: $background-color3;
+}
+
+.block4 {
+  // background-color: #f8bb44;
+  background-color: $background-color4;
+}
+
+.block5 {
+  // background-color: #f24b4b;
+  background-color: $background-color5;
+}
+
+//  -----------------  hover ANIMATION -----------------
+.stripe::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $background;
+  opacity: 0.1;
+  transform: skew(25deg);
+  width: 100%;
+  height: inherit;
+  transition: transform 0.3s;
+}
+
+.stripe:hover:before {
+  transform: scale(3);
+}
+
+// -----------------  keyframes ANIMATION -----------------
+@keyframes block1 {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes block2 {
+  0% {
+    transform: translateY(110%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes block3 {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes block4 {
+  0% {
+    transform: translateY(110%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes block5 {
+  0% {
+    transform: translateX(110%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.block1 {
+  animation: 0.5s ease-out 0s 1 block1 both;
+}
+
+.block2 {
+  animation: 0.5s ease-out 0.1s 1 block2 both;
+}
+
+.block3 {
+  animation: 0.5s ease-out 0.2s 1 block3 both;
+}
+
+.block4 {
+  animation: 0.5s ease-out 0.3s 1 block4 both;
+}
+
+.block5 {
+  animation: 0.5s ease-out 0.4s 1 block5 both;
+}
+
+// Media queries
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
