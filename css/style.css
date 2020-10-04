@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.stripe:nth-child(1) {
+  margin-right: 3px;
+}
+
+.stripe:nth-child(2) {
+  margin-right: 3px;
+}
+
+.stripe:nth-child(3) {
+  margin-right: 3px;
+}
+
+.stripe:nth-child(4) {
+  margin-right: 3px;
+}
+
 body {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
@@ -16,6 +32,7 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: stretch;
+  cursor: pointer;
 }
 
 .stripes .stripe {
@@ -27,7 +44,6 @@ h1 {
   position: relative;
   overflow: hidden;
   width: 20%;
-  margin-right: 3px;
 }
 
 .block1 {
