@@ -70,46 +70,46 @@ h1 {
 
 @keyframes block1 {
   0% {
-    transform: translateX(-110%);
+    transform: translate3d(-100%, 0, 0);
   }
   100% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes block2 {
   0% {
-    transform: translateY(110%);
+    transform: translate3d(0, 100%, 0);
   }
   100% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes block3 {
   0% {
-    transform: translateY(-110%);
+    transform: translate3d(0, -100%, 0);
   }
   100% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes block4 {
   0% {
-    transform: translateY(110%);
+    transform: translate3d(0, 100%, 0);
   }
   100% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes block5 {
   0% {
-    transform: translateX(110%);
+    transform: translate3d(100%, 0, 0);
   }
   100% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
